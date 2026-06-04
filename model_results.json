@@ -1,0 +1,137 @@
+{
+  "selected_model": "Logistic Regression",
+  "selection_rule": "Highest mean 5-fold training CV ROC-AUC",
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_ranges": {
+    "age": {
+      "min": 29.0,
+      "max": 77.0,
+      "median": 56.0
+    },
+    "trestbps": {
+      "min": 94.0,
+      "max": 200.0,
+      "median": 130.0
+    },
+    "chol": {
+      "min": 126.0,
+      "max": 564.0,
+      "median": 244.5
+    },
+    "thalach": {
+      "min": 71.0,
+      "max": 202.0,
+      "median": 153.5
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 6.2,
+      "median": 0.8
+    },
+    "ca": {
+      "min": 0.0,
+      "max": 3.0,
+      "median": 0.0
+    }
+  },
+  "train_rows": 242,
+  "test_rows": 61,
+  "cv_results": [
+    {
+      "Model": "Logistic Regression",
+      "CV ROC-AUC mean": 0.9064947130164521
+    },
+    {
+      "Model": "Random Forest",
+      "CV ROC-AUC mean": 0.8843611702307355
+    }
+  ],
+  "test_results": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8688524590163934,
+      "Precision (1)": 0.8125,
+      "Recall (1)": 0.9285714285714286,
+      "F1 (1)": 0.8666666666666667,
+      "ROC-AUC": 0.9577922077922079,
+      "False negatives": 2
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.8852459016393442,
+      "Precision (1)": 0.8387096774193549,
+      "Recall (1)": 0.9285714285714286,
+      "F1 (1)": 0.8813559322033898,
+      "ROC-AUC": 0.9388528138528137,
+      "False negatives": 2
+    }
+  ],
+  "random_forest_importance": [
+    {
+      "Feature": "thal",
+      "Importance": 0.1707075301954875
+    },
+    {
+      "Feature": "cp",
+      "Importance": 0.12621656884411186
+    },
+    {
+      "Feature": "thalach",
+      "Importance": 0.10485006467842753
+    },
+    {
+      "Feature": "ca",
+      "Importance": 0.09385650769630256
+    },
+    {
+      "Feature": "oldpeak",
+      "Importance": 0.08125682829610721
+    },
+    {
+      "Feature": "age",
+      "Importance": 0.07745426248831465
+    },
+    {
+      "Feature": "chol",
+      "Importance": 0.06888538035408652
+    },
+    {
+      "Feature": "exang",
+      "Importance": 0.06693667147577267
+    },
+    {
+      "Feature": "trestbps",
+      "Importance": 0.06480210963528943
+    },
+    {
+      "Feature": "slope",
+      "Importance": 0.05869036136402811
+    },
+    {
+      "Feature": "sex",
+      "Importance": 0.04139175598182025
+    },
+    {
+      "Feature": "restecg",
+      "Importance": 0.03056890897982331
+    },
+    {
+      "Feature": "fbs",
+      "Importance": 0.014383050010428357
+    }
+  ]
+}
